@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>onKeyUp</title>
+    
+</head>
+<body>
+
+    <h1 id="heading"></h1>
+    <input id="inputbox" type="text" onkeyup="display()" />
+<script type="text/javascript">
+function display(){
+    var inputbox = document.getElementById('inputbox');
+    var elem = document.getElementById('heading');
+    elem.style.color="blue";
+    elem.style.backgroundColor="pink";
+    elem.style.fontStyle="roman black";
+
+    elem.innerHTML = inputbox.value;
+    
+}
+</script>
+
+</body>
+</html>
